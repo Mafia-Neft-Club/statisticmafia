@@ -223,6 +223,7 @@
         var arrOfSearched = [];
 
         var render = function() {
+            var formatter = new Intl.DateTimeFormat('ru-RU');
             var self = this;
             var _h = self.$createElement;
             var h = self._self._c || _h;          
@@ -232,6 +233,9 @@
                     "md-label" : "\u0420\u0435\u0439\u0442\u0438\u043d\u0433"
                 }
             }, [
+                h("div", {
+                    staticClass : ""
+                }, [self._v("\u0414\u0430\u0442\u0430 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F: " + formatter.format(new Date(this.settings.dateUpdate)))]),
                 h("div", { staticClass : "search-block" }, 
                     [self._v("\u0418\u0433\u0440\u043e\u043a: "), 
                         h("input", { 
@@ -1319,7 +1323,7 @@
                                     }
                                     return _context10.next = 12, r.json();
                                 case 12:
-                                    return data = _context10.sent, this.database = data, this.players = data.players, this.games = data.games, this.calculateStatistic(), _context10.abrupt("break", 22);
+                                    return data = _context10.sent, this.database = data, this.players = data.players, this.games = data.games, this.settings = data.settings, this.calculateStatistic(), _context10.abrupt("break", 22);
                                 case 18:
                                     e--;
                                     if (0 == e) {
