@@ -350,7 +350,7 @@
                 staticClass : "games-statistic games-statistic-black-wins"
             }, [self._v("\u041f\u043e\u0431\u0435\u0434 \u043c\u0430\u0444\u0438\u0438: " + self._s(self.blackWinsCount + " (" + Math.round(self.blackWinsCount / self.gamesCount * 100) + "%)"))]), h("div", {
                 staticClass : "games-statistic games-statistic-rating"
-            }, [self._v("\u0418\u0433\u0440 \u0434\u043b\u044f \u043f\u043e\u043f\u0430\u0434\u0430\u043d\u0438\u044f \u0432 \u0440\u0435\u0439\u0442\u0438\u043d\u0433: " + self._s(self.gamesForRatingCount) + " (16%)")])]), h("md-tab", {
+            }, [self._v("\u0418\u0433\u0440 \u0434\u043b\u044f \u043f\u043e\u043f\u0430\u0434\u0430\u043d\u0438\u044f \u0432 \u0440\u0435\u0439\u0442\u0438\u043d\u0433: " + self._s(self.gamesForRatingCount) + " (14%)")])]), h("md-tab", {
                 attrs : {
                     id : "tab-roles",
                     "md-label" : "\u041f\u043e \u0440\u043e\u043b\u044f\u043c"
@@ -1216,7 +1216,7 @@
                     redWinsCount : 0,
                     blackWinsCount : 0,
                     gamesForRatingCount : 0,
-                    ratingThreshold : .16,
+                    ratingThreshold : .14,
                     currentSort : "name",
                     currentSortOrder : "asc",
                     database : null,
